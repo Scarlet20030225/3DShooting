@@ -8,9 +8,9 @@ namespace App
 {
 	Camera::Camera()
 	{
-		SetCameraNearFar(Lib::cameraNear, Lib::cameraFar);
-		SetCameraPositionAndTarget_UpVecY(VGet(static_cast<float>(Lib::screenSizeX) / 2, static_cast<float>(Lib::screenSizeY), Lib::cameraPosZ)
-			, VGet(static_cast<float>(Lib::screenSizeX) / 2, static_cast<float>(Lib::screenSizeY), Lib::cameraGazingPosZ));
+		SetCameraNearFar(cameraNear, cameraFar);
+		SetCameraPositionAndTarget_UpVecY(VGet(static_cast<float>(screenSizeX) / 2, static_cast<float>(screenSizeY) / 2, cameraPosZ)
+			, VGet(static_cast<float>(screenSizeX) / 2, static_cast<float>(screenSizeY) / 2, cameraGazingPosZ));
 	}
 
 	Camera::~Camera() {}
