@@ -14,7 +14,10 @@ namespace App
 		SetGraphMode(Lib::screenSizeX, Lib::screenSizeY, Lib::colorBitDepth);
 		DxLib_Init();
 
-		camera = new App::Camera();
+		//---------------------------------------------------------------------------------------------------------
+		// コンストラクタ呼び出し
+		//---------------------------------------------------------------------------------------------------------
+		camera		   = new App::Camera();
 		gamePlayScreen = new App::GamePlayScreen();
 	}
 
@@ -34,11 +37,17 @@ namespace App
 			// 処理開始時刻を所得
 			auto start = std::chrono::system_clock::now();
 
+			//---------------------------------------------------------------------------------------------------------
+			// 更新処理
+			//---------------------------------------------------------------------------------------------------------
 			gamePlayScreen->backScroll(deltaTime);
 
-			// 画面更新処理
+			// 画面更新
 			ClearDrawScreen();
 
+			//---------------------------------------------------------------------------------------------------------
+			// 描画処理
+			//---------------------------------------------------------------------------------------------------------
 			gamePlayScreen->Draw();
 
 			// 描画を確定
@@ -48,7 +57,7 @@ namespace App
 			auto end = std::chrono::system_clock::now();
 			auto elapsed = std::chrono::duration_cast<std::chrono::milliseconds>(end - start);
 
-			// 1フレームにかかった時間が指定の時間以下であれば待機する
+			// 1フレームにかかった時間が指定の時間(deltaTime)以下であれば待機する
 			if (elapsed.count() < Lib::deltaTime)
 			{
 				std::this_thread::sleep_for(std::chrono::milliseconds(Lib::deltaTime - elapsed.count()));
