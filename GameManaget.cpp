@@ -13,6 +13,8 @@ namespace App
 		ChangeWindowMode(TRUE);
 		SetGraphMode(Lib::screenSizeX, Lib::screenSizeY, Lib::colorBitDepth);
 		DxLib_Init();
+
+		camera = new App::Camera();
 	}
 
 	GameManager::~GameManager()

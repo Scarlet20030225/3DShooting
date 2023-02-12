@@ -54,6 +54,9 @@
     <ClCompile Include="..\..\_Git2DGame\ShootingGame\Math.cpp">
       <Filter>ソース ファイル\Library</Filter>
     </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>ソース ファイル\System</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GameManaget.h">
@@ -64,6 +67,9 @@
     </ClInclude>
     <ClInclude Include="..\..\_Git2DGame\ShootingGame\Math.h">
       <Filter>ヘッダー ファイル\Library</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>ヘッダー ファイル\System</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

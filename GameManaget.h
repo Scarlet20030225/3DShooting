@@ -1,6 +1,7 @@
 #pragma once
 #include"DxLib.h"
 #include"Reference.h"
+#include"Camera.h"
 
 namespace App
 {
@@ -25,6 +26,6 @@ namespace App
 		void Finalize();
 
 	private:
-
+		Camera* camera;
 	};
 }
