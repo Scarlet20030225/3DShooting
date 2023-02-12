@@ -133,10 +133,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\_Git2DGame\ShootingGame\Math.cpp" />
     <ClCompile Include="GameManaget.cpp" />
     <ClCompile Include="Main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\_Git2DGame\ShootingGame\Math.h" />
     <ClInclude Include="GameManaget.h" />
     <ClInclude Include="Reference.h" />
   </ItemGroup>

@@ -37,8 +37,11 @@
     <Filter Include="ヘッダー ファイル\Boss">
       <UniqueIdentifier>{e566a592-8b04-4d86-b981-ab25be4a9151}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ヘッダー ファイル\Support">
+    <Filter Include="ヘッダー ファイル\Library">
       <UniqueIdentifier>{e07e88ae-34d1-41fb-b081-3be40079e17f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Library">
+      <UniqueIdentifier>{91f9eea9-08a1-4dd6-b2fa-efd8cc570e63}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -48,13 +51,19 @@
     <ClCompile Include="GameManaget.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\_Git2DGame\ShootingGame\Math.cpp">
+      <Filter>ソース ファイル\Library</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GameManaget.h">
       <Filter>ヘッダー ファイル\System</Filter>
     </ClInclude>
     <ClInclude Include="Reference.h">
-      <Filter>ヘッダー ファイル\Support</Filter>
+      <Filter>ヘッダー ファイル\Library</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\_Git2DGame\ShootingGame\Math.h">
+      <Filter>ヘッダー ファイル\Library</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
