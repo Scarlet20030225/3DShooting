@@ -13,14 +13,17 @@ namespace App
 		/// コンストラクタ
 		/// </summary>
 		GameManager();
+
 		/// <summary>
 		/// デストラクタ
 		/// </summary>
 		~GameManager();
+
 		/// <summary>
 		/// ゲームループ
 		/// </summary>
 		void Loop();
+
 		/// <summary>
 		/// 後処理
 		/// </summary>
