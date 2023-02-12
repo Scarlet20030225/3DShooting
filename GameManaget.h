@@ -3,6 +3,7 @@
 #include"Reference.h"
 #include"Camera.h"
 #include"GamePlayScreen.h"
+#include"Player.h"
 
 namespace App
 {
@@ -32,5 +33,6 @@ namespace App
 	private:
 		Camera* camera;
 		GamePlayScreen* gamePlayScreen;
+		Player* player;
 	};
 }

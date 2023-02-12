@@ -19,15 +19,18 @@ namespace App
 		//---------------------------------------------------------------------------------------------------------
 		camera		   = new App::Camera();
 		gamePlayScreen = new App::GamePlayScreen();
+		player		   = new App::Player();
 	}
 
 	GameManager::~GameManager()
 	{
 		delete camera;
 		delete gamePlayScreen;
+		delete player;
 
 		camera		   = nullptr;
 		gamePlayScreen = nullptr;
+		player		   = nullptr;
 	}
 
 	void GameManager::Loop()
@@ -41,6 +44,7 @@ namespace App
 			// 更新処理
 			//---------------------------------------------------------------------------------------------------------
 			gamePlayScreen->backScroll(deltaTime);
+			player->Update(deltaTime);
 
 			// 画面更新
 			ClearDrawScreen();
@@ -49,6 +53,7 @@ namespace App
 			// 描画処理
 			//---------------------------------------------------------------------------------------------------------
 			gamePlayScreen->Draw();
+			player->Draw();
 
 			// 描画を確定
 			ScreenFlip();

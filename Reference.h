@@ -61,4 +61,24 @@ namespace Lib
 	/// スクロールスピード3
 	/// </summary>
 	const float scrollSpeed3 = 0.15f;
+
+	/// <summary>
+	/// プレイヤーの速度
+	/// </summary>
+	const float playerSpeed = 1.0f;
+
+	/// <summary>
+	/// 速射弾の発射インターバル
+	/// </summary>
+	const float rapidInterval = 50.0f;
+
+	/// <summary>
+	/// 貫通弾の発射インターバル
+	/// </summary>
+	const float penetrateInterval = 250.0f;
+
+	/// <summary>
+	/// ミサイルの発射インターバル
+	/// </summary>
+	const float missileInterval = 600.0f;
 }
