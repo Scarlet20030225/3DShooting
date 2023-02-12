@@ -15,6 +15,7 @@ namespace App
 		DxLib_Init();
 
 		camera = new App::Camera();
+		gamePlayScreen = new App::GamePlayScreen();
 	}
 
 	GameManager::~GameManager()
@@ -28,9 +29,12 @@ namespace App
 			//　処理開始時刻を所得
 			auto start = std::chrono::system_clock::now();
 
+			gamePlayScreen->backScroll(deltaTime);
+
 			//画面更新処理
 			ClearDrawScreen();
 
+			gamePlayScreen->Draw();
 
 			ScreenFlip();
 

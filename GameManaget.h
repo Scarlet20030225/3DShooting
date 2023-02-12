@@ -2,6 +2,7 @@
 #include"DxLib.h"
 #include"Reference.h"
 #include"Camera.h"
+#include"GamePlayScreen.h"
 
 namespace App
 {
@@ -27,5 +28,6 @@ namespace App
 
 	private:
 		Camera* camera;
+		GamePlayScreen* gamePlayScreen;
 	};
 }

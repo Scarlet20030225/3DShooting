@@ -136,12 +136,14 @@
     <ClCompile Include="..\..\_Git2DGame\ShootingGame\Math.cpp" />
     <ClCompile Include="Camera.cpp" />
     <ClCompile Include="GameManaget.cpp" />
+    <ClCompile Include="GamePlayScreen.cpp" />
     <ClCompile Include="Main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\_Git2DGame\ShootingGame\Math.h" />
     <ClInclude Include="Camera.h" />
     <ClInclude Include="GameManaget.h" />
+    <ClInclude Include="GamePlayScreen.h" />
     <ClInclude Include="Reference.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
