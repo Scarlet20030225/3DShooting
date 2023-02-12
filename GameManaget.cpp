@@ -20,22 +20,28 @@ namespace App
 
 	GameManager::~GameManager()
 	{
+		delete camera;
+		delete gamePlayScreen;
+
+		camera		   = nullptr;
+		gamePlayScreen = nullptr;
 	}
 
 	void GameManager::Loop()
 	{
 		while (ProcessMessage() == 0)
 		{
-			//　処理開始時刻を所得
+			// 処理開始時刻を所得
 			auto start = std::chrono::system_clock::now();
 
 			gamePlayScreen->backScroll(deltaTime);
 
-			//画面更新処理
+			// 画面更新処理
 			ClearDrawScreen();
 
 			gamePlayScreen->Draw();
 
+			// 描画を確定
 			ScreenFlip();
 
 			// 1フレームにかかった時間を計算
