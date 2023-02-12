@@ -13,10 +13,45 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="ソース ファイル\System">
+      <UniqueIdentifier>{ada2779d-9a29-4296-a582-270b108b2806}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Player">
+      <UniqueIdentifier>{00ffb7fd-6058-461d-b336-1edf17b2e61e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Enemy">
+      <UniqueIdentifier>{cbde1d3e-cb8b-46d5-9b2b-8af6e1cadd43}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Boss">
+      <UniqueIdentifier>{32be82ed-e045-4765-a034-d8ab0bc8bd17}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\System">
+      <UniqueIdentifier>{9f08cc39-387b-4480-b8dd-1cdd533a5904}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Player">
+      <UniqueIdentifier>{478e3119-6783-4ed7-bacc-eb009d7d7187}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Enemy">
+      <UniqueIdentifier>{6788a3ee-b7ae-47de-a476-3ea0b8e73e0e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Boss">
+      <UniqueIdentifier>{e566a592-8b04-4d86-b981-ab25be4a9151}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Support">
+      <UniqueIdentifier>{e07e88ae-34d1-41fb-b081-3be40079e17f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
-      <Filter>ソース ファイル</Filter>
+      <Filter>ソース ファイル\System</Filter>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GameManaget.h">
+      <Filter>ヘッダー ファイル\System</Filter>
+    </ClInclude>
+    <ClInclude Include="Reference.h">
+      <Filter>ヘッダー ファイル\Support</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
