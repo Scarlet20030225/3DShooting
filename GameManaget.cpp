@@ -21,7 +21,7 @@ namespace App
 
 	void GameManager::Loop()
 	{
-		while (ProcessMessage() == 0 && CheckHitKey(KEY_INPUT_ESCAPE) == 0)
+		while (ProcessMessage() == 0)
 		{
 			//　処理開始時刻を所得
 			auto start = std::chrono::system_clock::now();
@@ -40,6 +40,12 @@ namespace App
 			if (elapsed.count() < Lib::deltaTime)
 			{
 				std::this_thread::sleep_for(std::chrono::milliseconds(Lib::deltaTime - elapsed.count()));
+			}
+
+			// ESCAPEキーが押されたらループを抜ける
+			if (GetAsyncKeyState(VK_ESCAPE) & 0x8000)
+			{
+				break;
 			}
 		}
 	}
