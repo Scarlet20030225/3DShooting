@@ -11,7 +11,7 @@ namespace App
 	{
 		// DxLib初期化
 		ChangeWindowMode(TRUE);
-		SetGraphMode(Lib::screenSizeX, Lib::screenSizeY, Lib::colorBitDepth);
+		SetGraphMode(screenSizeX, screenSizeY, colorBitDepth);
 		DxLib_Init();
 
 		//---------------------------------------------------------------------------------------------------------
@@ -58,9 +58,9 @@ namespace App
 			auto elapsed = std::chrono::duration_cast<std::chrono::milliseconds>(end - start);
 
 			// 1フレームにかかった時間が指定の時間(deltaTime)以下であれば待機する
-			if (elapsed.count() < Lib::deltaTime)
+			if (elapsed.count() < deltaTime)
 			{
-				std::this_thread::sleep_for(std::chrono::milliseconds(Lib::deltaTime - elapsed.count()));
+				std::this_thread::sleep_for(std::chrono::milliseconds(deltaTime - elapsed.count()));
 			}
 
 			// ESCAPEキーが押されたらループを抜ける

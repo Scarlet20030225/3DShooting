@@ -16,18 +16,20 @@ namespace App
 		int lostEnduranceGraph;
 		int lostLifeGraph;
 
+		int backBaseGraph;
+		int backBaseX;
+		int backBaseY;
+
 		int backStar1Graph;
-		int backStar1X[2];
+		float backStar1X[2];
 
 		int backStar2Graph;
-		int backStar2X[2];
+		float backStar2X[2];
 
 		int backStar3Graph;
-		int backStar3X[2];
+		float backStar3X[2];
 
-		int backStarY;
-		int backStarW;
-		int backStarH;
+		float backStarY;
 
 		float scrollSpeed[3];
 	};

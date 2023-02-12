@@ -5,60 +5,60 @@ namespace Lib
 	/// <summary>
 	/// スクリーン幅
 	/// </summary>
-	constexpr auto screenSizeX = 1920;
+	const float screenSizeX = 1920.0f;
 
 	/// <summary>
 	/// スクリーン高さ
 	/// </summary>
-	constexpr auto screenSizeY = 1080;
+	const float screenSizeY = 1080.0f;
 
 	/// <summary>
 	/// カラービット数
 	/// </summary>
-	constexpr auto colorBitDepth = 32;
+	const int colorBitDepth = 32;
 
 	/// <summary>
 	/// フレームを60fpsに
 	/// </summary>
-	constexpr auto fps = 60;
+	const int fps = 60;
 
 	/// <summary>
 	/// 待ち時間
 	/// </summary>
-	constexpr auto deltaTime = 1000 / fps;
+	const int deltaTime = 1000 / fps;
 
 	/// <summary>
 	/// 手前クリップ距離
 	/// </summary>
-	constexpr auto cameraNear = 1;
+	const float cameraNear = 1.0f;
 
 	/// <summary>
 	/// 奥クリップ距離
 	/// </summary>
-	constexpr auto cameraFar = 2000;
+	const float cameraFar = 2000.0f;
 
 	/// <summary>
 	/// カメラのZ座標
 	/// </summary>
-	constexpr auto cameraPosZ = -1000;
+	const float cameraPosZ = -1000.0f;
 
 	/// <summary>
 	/// カメラのZ座標注視点
 	/// </summary>
-	constexpr auto cameraGazingPosZ = 0;
+	const float cameraGazingPosZ = 0.0f;
 
 	/// <summary>
 	/// スクロールスピード１
 	/// </summary>
-	constexpr auto scrollSpeed1 = 1;
+	const float scrollSpeed1 = 0.05f;
 
 	/// <summary>
 	/// スクロールスピード2
 	/// </summary>
-	constexpr auto scrollSpeed2 = 2;
+	const float scrollSpeed2 = 0.10f;
 
 	/// <summary>
 	/// スクロールスピード3
 	/// </summary>
-	constexpr auto scrollSpeed3 = 3;
+	const float scrollSpeed3 = 0.15f;
 }
